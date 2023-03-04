@@ -20,18 +20,15 @@ var elBotao = document.getElementById("botao");
 
 elCampo.onclick = function() {
     var nome = elCampo.value;
-    sabores.push({pizza: nome})
-
-     salvarSabores()
-
+    sabores.push({pizza: nome});
     elCampo.value = "";
 
-    
+     salvarSabores()
 }
 
 function salvarSabores(){
     if(sabores.length > 3 ){
-        alert("permitido apenas 3 sabores")
+        alert("permitido apenas 3 sabores");
     }else{
         localStorage.stringify("sabores", JSON.stringify(sabores));
     }
@@ -39,4 +36,10 @@ function salvarSabores(){
 
 }
 
-inserirAdicionais()
+
+// function listaSabores(){
+//     for(const)
+// }
+
+
+//inserirAdicionais()

@@ -3,25 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pizzaria do Joãozzinho</title>
 </head>
 <body>
     <header>
         <h2>O melhor delivery da cidade !</h2>
-    
     </header>
     <main>
         <section>
             <fieldset>
-                <legend>Monte sua pizza como desejar:</legend>
+                    <legend>Monte sua pizza como desejar:</legend>
+                    <br><br>
+                    <label for="Selecione a massa">Selecione a massa:</label>
+                    <select name="massa" id="massas" onchange="inserirAdicionais()">
+                    <option></option>
+                    <option>Massa comum</option>
+                    <option>Massa Integral</option>
+                    <option>Temperada</option>
+                    <option>Sem glutem</option>
+                    <option>Fermentação natural</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="Selecione a borda">Selecione a borda:</label>
+                    <select name="borda" id="bordas" onchange="inserirAdicionais()">
+                    <option value=""></option>
+                    <option>Sem borda</option>
+                    <option>Borda de Catupiry</option>
+                    <option>Borda Cheddar</option>
+                    <option value=""></option>
+                    <option></option>
+                    </select>
+
+                     <br><br>
+
+                    <label for="">Secione os sabores (max 3 sabores):</label>
+                    <input type="text" id="campo" aria-placeholder="Digite os sabores">
+                    <button id="botao" onclick="">Incluir</button>
+                    <ul id="lista"></ul>
+
+                    <br><br>
+                    <hr>
+                    <label for="">Esccolha o sabor:</label>
+                    <ul id="cardapio">
+                        <li>Calabresa</li>
+                        <li>4 queijo</li>
+                        <li>Frango</li>
+                        <li>Lombinho</li>
+                        <li>Bacon</li>
+                        <li>Portuguesa</li>
+                        <li>Prestigio</li>
+                        <li>Chocolate</li>
+                    </ul>
+                    <br><br>
+                    <input type="button" value="Enviar Pedido" name="enviar" id="input">
             </fieldset>
-            <label for="Selecione a massa"></label>
-            <select name="" id=""></select>
-            
         </section>
     </main>
-
+    <script  src="script.js"></script>
 </body>
 </html>

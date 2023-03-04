@@ -1,0 +1,48 @@
+header{
+    background-image: url(pizza-banner.jpg);
+    height: 300px;
+    background-position-y: -300px;
+    width: 100%;
+    padding: 20px 10px;
+
+}
+
+header h2 {
+    color:orange;
+    text-align: right;
+}
+
+main{
+    width: 100%;
+   
+}
+
+section{
+    width: 60%;
+    margin: auto;
+}
+
+section fieldset{
+     background-color: #ffa800;
+     font-size: 20px;
+     font-weight: bold;
+
+}
+section button{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+}
+
+section #input{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+}
+
+section legend{
+    border-radius: 20px;
+    color: rgb(55, 47, 32);
+    font-style: italic;
+    font-size: 23px;
+}
